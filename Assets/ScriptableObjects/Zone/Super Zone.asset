@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef1fc20972fed764d9942d06e1e97015, type: 3}
+  m_Name: Super Zone
+  m_EditorClassIdentifier: 
+  perLevel: 30
+  spinSo: {fileID: 11400000, guid: c3dd841e20ac4a443a6da9537d0a99ab, type: 2}
+  progressSo: {fileID: 11400000, guid: aec95ef300d03944eb9fdf47e8bd97e2, type: 2}
+  useBomb: 0
