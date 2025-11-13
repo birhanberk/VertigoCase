@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79ed75ede20e2c842881e644588831c0, type: 3}
   m_Name: Gold Spin
   m_EditorClassIdentifier: 
-  spinHeader: GOLD SPIN
-  spinBaseImage: {fileID: 21300000, guid: 5b72688f2bfad0e4287cabf5ed683432, type: 3}
-  spinIndicatorImage: {fileID: 21300000, guid: ea8d3a1fd8ed0284e8583720d55e8a3c, type: 3}
+  wheelHeader: GOLD SPIN
+  wheelBaseImage: {fileID: 21300000, guid: 5b72688f2bfad0e4287cabf5ed683432, type: 3}
+  wheelIndicatorImage: {fileID: 21300000, guid: ea8d3a1fd8ed0284e8583720d55e8a3c, type: 3}

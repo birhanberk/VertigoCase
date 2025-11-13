@@ -8,7 +8,7 @@ namespace Progress
     public class LevelElement : MonoBehaviour
     {
         [SerializeField, Required] private RectTransform rectTransform;
-        [SerializeField, Required] private TMP_Text text;
+        [SerializeField, Required] protected TMP_Text text;
         [SerializeField] private float speed;
 
         public RectTransform RectTransform => rectTransform;

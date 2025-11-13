@@ -12,6 +12,7 @@ namespace Progress
         public override void SetElement(LevelSo levelSo, int level)
         {
             base.SetElement(levelSo, level);
+            text.color = levelSo.ZoneSo.ProgressSo.ActiveColor;
             background.sprite = levelSo.ZoneSo.ProgressSo.BackgroundImage;
         }
     }

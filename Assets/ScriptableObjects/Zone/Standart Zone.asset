@@ -13,6 +13,32 @@ MonoBehaviour:
   m_Name: Standart Zone
   m_EditorClassIdentifier: 
   perLevel: 1
-  spinSo: {fileID: 11400000, guid: d321b02969f8b004daf24b92a00357c5, type: 2}
+  wheelSo: {fileID: 11400000, guid: d321b02969f8b004daf24b92a00357c5, type: 2}
   progressSo: {fileID: 11400000, guid: f1dc4b98d303e5f4fbacd443f7f76b4b, type: 2}
   useBomb: 1
+  canLeave: 0
+  items:
+  - {fileID: 11400000, guid: ef7cb8eed299c91429892045b6d62c5f, type: 2}
+  - {fileID: 11400000, guid: 05e49901039e3134ba8d881b78654505, type: 2}
+  - {fileID: 11400000, guid: e14ae73af2a63944eb31ef63ac7c9043, type: 2}
+  - {fileID: 11400000, guid: 1b3f97c095ea44c46b00394e4d89dbc8, type: 2}
+  - {fileID: 11400000, guid: a6b2b7e43b47cfc499a789bca5bdd0c7, type: 2}
+  - {fileID: 11400000, guid: 93cd003482e583e4a9d7441ff47c860a, type: 2}
+  - {fileID: 11400000, guid: db6f77fc2e6f3c14e8d5dff4845f87d2, type: 2}
+  - {fileID: 11400000, guid: ff081f21752e8bb48be94a05d697abec, type: 2}
+  - {fileID: 11400000, guid: d98b6b2f09cf23b44913eaab59fca4b7, type: 2}
+  - {fileID: 11400000, guid: b17cbdaa0b836c3479f73b223f5fe840, type: 2}
+  - {fileID: 11400000, guid: f247dd51404a61844820f638cac8784c, type: 2}
+  - {fileID: 11400000, guid: 916c527ceccd7c74cbe71dd6f97835df, type: 2}
+  - {fileID: 11400000, guid: 51f5019a22ef1cb4dbe3c2a6f32b9962, type: 2}
+  - {fileID: 11400000, guid: ce18df8e5fb9e214fbd6f9c5cb0ff3e3, type: 2}
+  - {fileID: 11400000, guid: a41379b251654a84790518797cced4a2, type: 2}
+  - {fileID: 11400000, guid: f11d8f7cb5d79e347b36aa718bbf06e7, type: 2}
+  - {fileID: 11400000, guid: 022d06b944c428b49b84ea8a56225247, type: 2}
+  - {fileID: 11400000, guid: 4c1823d1f62d44e4e919b72eb0c1c918, type: 2}
+  - {fileID: 11400000, guid: 0aedae32e7904874fb714222b369febe, type: 2}
+  - {fileID: 11400000, guid: bdd9ab2812f539245938bd65876d0854, type: 2}
+  - {fileID: 11400000, guid: 3c2efc7a338b9ef40a8f23d0b9c7453b, type: 2}
+  - {fileID: 11400000, guid: a994b6a47bbfb67499166dfedabbf498, type: 2}
+  - {fileID: 11400000, guid: 37b7f068006262d4b81310df2ab20357, type: 2}
+  - {fileID: 11400000, guid: 85820b2e0094313479061772ddcfc81a, type: 2}

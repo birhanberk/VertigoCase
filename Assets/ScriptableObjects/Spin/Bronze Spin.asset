@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79ed75ede20e2c842881e644588831c0, type: 3}
   m_Name: Bronze Spin
   m_EditorClassIdentifier: 
-  spinHeader: BRONZE SPIN
-  spinBaseImage: {fileID: 21300000, guid: 166c95af28556e74e8a368ac05c2c06c, type: 3}
-  spinIndicatorImage: {fileID: 21300000, guid: 092933af461766f458a4b04c2fb52b57, type: 3}
+  wheelHeader: BRONZE SPIN
+  wheelBaseImage: {fileID: 21300000, guid: 166c95af28556e74e8a368ac05c2c06c, type: 3}
+  wheelIndicatorImage: {fileID: 21300000, guid: 092933af461766f458a4b04c2fb52b57, type: 3}

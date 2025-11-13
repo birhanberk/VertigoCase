@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using Data;
+using Item;
 using UnityEngine;
 using Zone;
 
@@ -11,6 +11,7 @@ namespace Level
         [SerializeField] private ZoneSo zoneSo;
         [SerializeField] private List<ItemSo> items = new ();
 
-        public ZoneSo ZoneSo => zoneSo;
+        public ZoneSo ZoneSo { get => zoneSo; set  => zoneSo = value; }
+        public List<ItemSo> Items { get => items; set  => items = value; }
     }
 }

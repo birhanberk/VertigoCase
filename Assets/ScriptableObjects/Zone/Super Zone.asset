@@ -13,6 +13,18 @@ MonoBehaviour:
   m_Name: Super Zone
   m_EditorClassIdentifier: 
   perLevel: 30
-  spinSo: {fileID: 11400000, guid: c3dd841e20ac4a443a6da9537d0a99ab, type: 2}
+  wheelSo: {fileID: 11400000, guid: c3dd841e20ac4a443a6da9537d0a99ab, type: 2}
   progressSo: {fileID: 11400000, guid: aec95ef300d03944eb9fdf47e8bd97e2, type: 2}
   useBomb: 0
+  canLeave: 1
+  items:
+  - {fileID: 11400000, guid: 05e49901039e3134ba8d881b78654505, type: 2}
+  - {fileID: 11400000, guid: e14ae73af2a63944eb31ef63ac7c9043, type: 2}
+  - {fileID: 11400000, guid: 1b3f97c095ea44c46b00394e4d89dbc8, type: 2}
+  - {fileID: 11400000, guid: 61c93ed557747464d997538adb361074, type: 2}
+  - {fileID: 11400000, guid: b92f114057911c346bc7422989ec9399, type: 2}
+  - {fileID: 11400000, guid: ff081f21752e8bb48be94a05d697abec, type: 2}
+  - {fileID: 11400000, guid: 1bff386de9b885948b847474655f482e, type: 2}
+  - {fileID: 11400000, guid: b1c360265b854444d8daf12b90e0e542, type: 2}
+  - {fileID: 11400000, guid: aa026e10f027aed4aac2dae76b5712ee, type: 2}
+  - {fileID: 11400000, guid: 63a3e2e389c426e40bd09d655d56a615, type: 2}

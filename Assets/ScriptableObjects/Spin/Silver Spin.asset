@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79ed75ede20e2c842881e644588831c0, type: 3}
   m_Name: Silver Spin
   m_EditorClassIdentifier: 
-  spinHeader: SILVER SPIN
-  spinBaseImage: {fileID: 21300000, guid: 338ef8cbbb81e6646a77535c7840236c, type: 3}
-  spinIndicatorImage: {fileID: 21300000, guid: 28464c395efbe4545b5282d3f9508a77, type: 3}
+  wheelHeader: SILVER SPIN
+  wheelBaseImage: {fileID: 21300000, guid: 338ef8cbbb81e6646a77535c7840236c, type: 3}
+  wheelIndicatorImage: {fileID: 21300000, guid: 28464c395efbe4545b5282d3f9508a77, type: 3}
