@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01706553aa2d1ea4e9ba698631bd8415, type: 3}
+  m_Name: Tier 3 Shotgun
+  m_EditorClassIdentifier: 
+  itemHeader: Tier 3 Shotgun
+  itemImage: {fileID: 21300000, guid: ceb3b744dcbf6a3468d06d6b9f79cb82, type: 3}
+  rewardSo: {fileID: 11400000, guid: 7b6c85e5dd8cf9f4681cafd858589ab9, type: 2}
+  baseAmount: 1

@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemHeader: Pistol Points
   itemImage: {fileID: 21300000, guid: 26a3461d8f18ff14590c8a79fda17f45, type: 3}
+  rewardSo: {fileID: 11400000, guid: 2d5d79f88d63f464da75a754b3dea4f4, type: 2}
+  baseAmount: 1

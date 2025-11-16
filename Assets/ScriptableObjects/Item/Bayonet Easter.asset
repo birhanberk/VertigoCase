@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemHeader: Bayonet Easter
   itemImage: {fileID: 21300000, guid: 0c57ea465cd26ee40acd9191d716e1cf, type: 3}
+  rewardSo: {fileID: 11400000, guid: 7b6c85e5dd8cf9f4681cafd858589ab9, type: 2}
+  baseAmount: 1

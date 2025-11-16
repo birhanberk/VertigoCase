@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zoneSo: {fileID: 11400000, guid: ac7677c8bcef6bf488f4caca676709e4, type: 2}
   items:
+  - {fileID: 11400000, guid: 2079dacc67a0f7149bdce2679f6e8a57, type: 2}
+  - {fileID: 11400000, guid: 0c0c385fac14e03489880d30672aff10, type: 2}
+  - {fileID: 11400000, guid: 2079dacc67a0f7149bdce2679f6e8a57, type: 2}
+  - {fileID: 11400000, guid: 2079dacc67a0f7149bdce2679f6e8a57, type: 2}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: aa54ab0d9136d5e49989c597878e725e, type: 2}
+  - {fileID: 11400000, guid: 2079dacc67a0f7149bdce2679f6e8a57, type: 2}
+  - {fileID: 11400000, guid: 2079dacc67a0f7149bdce2679f6e8a57, type: 2}

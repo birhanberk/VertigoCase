@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemHeader: Helmet Pumpkin
   itemImage: {fileID: 21300000, guid: 25ef475f5b34f2f44a00b07cddd2391a, type: 3}
+  rewardSo: {fileID: 11400000, guid: 7b6c85e5dd8cf9f4681cafd858589ab9, type: 2}
+  baseAmount: 1

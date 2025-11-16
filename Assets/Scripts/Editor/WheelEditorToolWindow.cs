@@ -1,12 +1,12 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Item;
 using Level;
+using UI.Item;
+using UI.Zone;
 using UnityEditor;
 using UnityEditorInternal;
 using UnityEngine;
-using Zone;
 
 namespace Editor
 {
@@ -26,7 +26,7 @@ namespace Editor
         private const string itemPathKey = "VertigoTool_ItemPath";
 
         public List<ZoneSo> zoneList = new();
-        public LevelSettingsSo levelSettings;
+        public LevelListSo levelList;
 
         public ReorderableList LevelReorderableList;
 
@@ -88,7 +88,7 @@ namespace Editor
 
         public void LoadLevelSettings()
         {
-            levelSettings = null;
+            levelList = null;
 
             if (!Directory.Exists(levelPath))
                 return;
@@ -96,10 +96,10 @@ namespace Editor
             var files = Directory.GetFiles(levelPath, "*.asset");
             foreach (var file in files)
             {
-                var asset = AssetDatabase.LoadAssetAtPath<LevelSettingsSo>(file);
+                var asset = AssetDatabase.LoadAssetAtPath<LevelListSo>(file);
                 if (asset)
                 {
-                    levelSettings = asset;
+                    levelList = asset;
                     break;
                 }
             }
@@ -107,11 +107,11 @@ namespace Editor
 
         public void CreateReorderableList()
         {
-            if (!levelSettings)
+            if (!levelList)
                 return;
 
             LevelReorderableList = new ReorderableList(
-                levelSettings.LevelList,
+                levelList.LevelList,
                 typeof(LevelSo),
                 draggable: false,
                 displayHeader: true,
@@ -126,7 +126,7 @@ namespace Editor
 
             LevelReorderableList.drawElementCallback = (rect, index, _, _) =>
             {
-                var level = levelSettings.LevelList[index];
+                var level = levelList.LevelList[index];
                 if (!level) return;
 
                 rect.y += 2;
@@ -145,7 +145,7 @@ namespace Editor
 
         public void CreateNewLevelAsset()
         {
-            var newIndex = levelSettings.LevelList.Count + 1;
+            var newIndex = levelList.LevelList.Count + 1;
             var newName = $"Level {newIndex}.asset";
             var fullPath = Path.Combine(levelPath, newName).Replace("\\", "/");
 
@@ -156,8 +156,8 @@ namespace Editor
             AssetDatabase.CreateAsset(newLevel, fullPath);
             AssetDatabase.SaveAssets();
 
-            levelSettings.LevelList.Add(newLevel);
-            EditorUtility.SetDirty(levelSettings);
+            levelList.LevelList.Add(newLevel);
+            EditorUtility.SetDirty(levelList);
 
             ApplyLevelRenaming();
             ApplyZoneAssignments();
@@ -168,18 +168,18 @@ namespace Editor
 
         public void DeleteLastLevelAsset()
         {
-            if (levelSettings.LevelList.Count == 0)
+            if (levelList.LevelList.Count == 0)
                 return;
 
-            var lastIndex = levelSettings.LevelList.Count - 1;
-            var last = levelSettings.LevelList[lastIndex];
+            var lastIndex = levelList.LevelList.Count - 1;
+            var last = levelList.LevelList[lastIndex];
 
             var path = AssetDatabase.GetAssetPath(last);
 
             AssetDatabase.DeleteAsset(path);
-            levelSettings.LevelList.RemoveAt(lastIndex);
+            levelList.LevelList.RemoveAt(lastIndex);
 
-            EditorUtility.SetDirty(levelSettings);
+            EditorUtility.SetDirty(levelList);
             AssetDatabase.SaveAssets();
 
             ApplyLevelRenaming();
@@ -191,9 +191,9 @@ namespace Editor
 
         private void ApplyLevelRenaming()
         {
-            for (var i = 0; i < levelSettings.LevelList.Count; i++)
+            for (var i = 0; i < levelList.LevelList.Count; i++)
             {
-                var level = levelSettings.LevelList[i];
+                var level = levelList.LevelList[i];
                 var path = AssetDatabase.GetAssetPath(level);
                 AssetDatabase.RenameAsset(path, $"Level {i + 1}");
             }
@@ -208,9 +208,9 @@ namespace Editor
             var sorted = new List<ZoneSo>(zoneList);
             sorted.Sort((a, b) => b.PerLevel.CompareTo(a.PerLevel));
 
-            for (var i = 0; i < levelSettings.LevelList.Count; i++)
+            for (var i = 0; i < levelList.LevelList.Count; i++)
             {
-                var level = levelSettings.LevelList[i];
+                var level = levelList.LevelList[i];
                 var num = i + 1;
 
                 foreach (var zone in sorted.Where(zone => zone.PerLevel > 0 && num % zone.PerLevel == 0))

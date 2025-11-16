@@ -18,13 +18,12 @@ MonoBehaviour:
   useBomb: 0
   canLeave: 1
   items:
-  - {fileID: 11400000, guid: 05e49901039e3134ba8d881b78654505, type: 2}
-  - {fileID: 11400000, guid: e14ae73af2a63944eb31ef63ac7c9043, type: 2}
-  - {fileID: 11400000, guid: 1b3f97c095ea44c46b00394e4d89dbc8, type: 2}
+  - {fileID: 11400000, guid: aa54ab0d9136d5e49989c597878e725e, type: 2}
   - {fileID: 11400000, guid: 61c93ed557747464d997538adb361074, type: 2}
   - {fileID: 11400000, guid: b92f114057911c346bc7422989ec9399, type: 2}
-  - {fileID: 11400000, guid: ff081f21752e8bb48be94a05d697abec, type: 2}
+  - {fileID: 11400000, guid: 0c0c385fac14e03489880d30672aff10, type: 2}
   - {fileID: 11400000, guid: 1bff386de9b885948b847474655f482e, type: 2}
   - {fileID: 11400000, guid: b1c360265b854444d8daf12b90e0e542, type: 2}
   - {fileID: 11400000, guid: aa026e10f027aed4aac2dae76b5712ee, type: 2}
   - {fileID: 11400000, guid: 63a3e2e389c426e40bd09d655d56a615, type: 2}
+  - {fileID: 11400000, guid: 37b7f068006262d4b81310df2ab20357, type: 2}

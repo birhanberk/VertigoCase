@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
-using Item;
 using Level;
+using UI.Item;
 using UnityEditor;
 using UnityEditorInternal;
 using UnityEngine;
@@ -29,7 +29,7 @@ namespace Editor
 
         public void Draw()
         {
-            if (!window.levelSettings)
+            if (!window.levelList)
             {
                 EditorGUILayout.HelpBox("Cant find LevelSettingsSo", MessageType.Error);
                 return;
@@ -59,7 +59,7 @@ namespace Editor
                 window.CreateNewLevelAsset();
             }
 
-            GUI.enabled = window.levelSettings.LevelList.Count > 0;
+            GUI.enabled = window.levelList.LevelList.Count > 0;
             if (GUILayout.Button("Delete Last Level", GUILayout.Height(30)))
             {
                 window.DeleteLastLevelAsset();
@@ -78,10 +78,10 @@ namespace Editor
                 selectedLevelIndex = window.LevelReorderableList.index;
             
             if (selectedLevelIndex < 0 ||
-                selectedLevelIndex >= window.levelSettings.LevelList.Count)
+                selectedLevelIndex >= window.levelList.LevelList.Count)
                 return;
 
-            var selectedLevel = window.levelSettings.LevelList[selectedLevelIndex];
+            var selectedLevel = window.levelList.LevelList[selectedLevelIndex];
             if (!selectedLevel) return;
             
             if (selectedLevel.ZoneSo && selectedLevel.ZoneSo.UseBomb)

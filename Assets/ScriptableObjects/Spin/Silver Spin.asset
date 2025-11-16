@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Silver Spin
   m_EditorClassIdentifier: 
   wheelHeader: SILVER SPIN
+  wheelHeaderColor: {r: 0.7764706, g: 0.7764706, b: 0.7764706, a: 1}
   wheelBaseImage: {fileID: 21300000, guid: 338ef8cbbb81e6646a77535c7840236c, type: 3}
   wheelIndicatorImage: {fileID: 21300000, guid: 28464c395efbe4545b5282d3f9508a77, type: 3}

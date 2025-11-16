@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01706553aa2d1ea4e9ba698631bd8415, type: 3}
   m_Name: Chest Gold
   m_EditorClassIdentifier: 
-  itemHeader: Chest Gold
+  itemHeader: Gold Chest
   itemImage: {fileID: 21300000, guid: 081d7734745a0d844b4ab25b554315b1, type: 3}
+  rewardSo: {fileID: 11400000, guid: 7b6c85e5dd8cf9f4681cafd858589ab9, type: 2}
+  baseAmount: 1

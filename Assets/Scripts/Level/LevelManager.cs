@@ -5,34 +5,39 @@ namespace Level
 {
     public class LevelManager
     {
-        private LevelSettingsSo _levelSettingsSo;
+        private LevelListSo _levelListSo;
         private int _currentLevelIndex;
 
         public Action<LevelSo> onLevelStarted;
 
         [Inject]
-        private void Construct(LevelSettingsSo levelSettingsSo)
+        private void Construct(LevelListSo levelListSo)
         {
-            _levelSettingsSo = levelSettingsSo;
+            _levelListSo = levelListSo;
         }
 
         public void NextLevel()
         {
-            _currentLevelIndex++;
-            LoadLevel(_currentLevelIndex);
+            LoadLevel(_currentLevelIndex + 1);
         }
         
         public void LoadLevel(int levelIndex)
         {
-            if (levelIndex < _levelSettingsSo.LevelList.Count)
+            _currentLevelIndex = levelIndex;
+            if (levelIndex < _levelListSo.LevelList.Count)
             {
-                onLevelStarted?.Invoke(_levelSettingsSo.LevelList[levelIndex]);
+                onLevelStarted?.Invoke(_levelListSo.LevelList[levelIndex]);
             }
         }
 
-        public LevelSo GetCurrentLevelSo()
+        public LevelSo GetStartLevelSo()
         {
-            return _levelSettingsSo.LevelList[_currentLevelIndex];
+            return _levelListSo.LevelList[0];
+        }
+
+        public bool IsLastLevel()
+        {
+            return _currentLevelIndex == _levelListSo.LevelList.Count - 1;
         }
     }
 }

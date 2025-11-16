@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using Item;
+using UI.Item;
+using UI.Zone;
 using UnityEngine;
-using Zone;
 
 namespace Level
 {

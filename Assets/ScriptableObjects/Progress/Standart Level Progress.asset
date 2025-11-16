@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 104c06513b4d4c648b57bf929a4d8356, type: 3}
   m_Name: Standart Level Progress
   m_EditorClassIdentifier: 
-  backgroundImage: {fileID: 21300000, guid: 5eb35a44733ce7147ab199612df17240, type: 3}
+  backgroundColor: {r: 1, g: 1, b: 1, a: 1}
   activeColor: {r: 0, g: 0, b: 0, a: 1}
   inactiveColor: {r: 1, g: 1, b: 1, a: 1}

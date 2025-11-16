@@ -9,8 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01706553aa2d1ea4e9ba698631bd8415, type: 3}
+  m_Script: {fileID: 11500000, guid: a979ff1811716014b86a35eadc0e6bdf, type: 3}
   m_Name: Gold
   m_EditorClassIdentifier: 
   itemHeader: Gold
   itemImage: {fileID: 21300000, guid: 4447a218d151ce44dbb11385fc15e804, type: 3}
+  rewardSo: {fileID: 11400000, guid: 2d5d79f88d63f464da75a754b3dea4f4, type: 2}
+  baseAmount: 1
+  currencySo: {fileID: 11400000, guid: d1038d6e2eecc114f99bff62d0dc8ba7, type: 2}

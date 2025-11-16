@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemHeader: Aviator Glasses
   itemImage: {fileID: 21300000, guid: 024af151823419e449462d1184c8b36b, type: 3}
+  rewardSo: {fileID: 11400000, guid: 2d5d79f88d63f464da75a754b3dea4f4, type: 2}
+  baseAmount: 1
